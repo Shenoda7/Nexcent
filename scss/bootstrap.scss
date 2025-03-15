@@ -1,0 +1,131 @@
+$font-family-sans-serif: "Inter", sans-serif;
+
+//Colors
+$primary: #28cb8b;
+$primary-dark-1: #43a046;
+$primary-dark-2: #388e3b;
+$primary-dark-3: #237d31;
+$primary-dark-4: #1b5e1f;
+$primary-dark-5: #103e13;
+$primary-light-1: #66bb69;
+$primary-light-2: #81c784;
+$primary-light-3: #a5d6a7;
+$primary-light-4: #c8e6c9;
+$primary-light-5: #e8f5e9;
+
+$secondary: #263238;
+$info: #2194f3;
+$silver: #f5f7fa;
+$light: #fbf9f5;
+$body-bg: $light;
+$d-grey: #4d4d4d;
+$grey: #717171;
+$l-grey: #89939e;
+$grey-blue: #abbed1;
+
+$theme-colors: (
+  "primary": $primary,
+  "primary-dark-1": $primary-dark-1,
+  "primary-dark-2": $primary-dark-2,
+  "primary-dark-3": $primary-dark-3,
+  "primary-dark-4": $primary-dark-4,
+  "primary-dark-5": $primary-dark-5,
+
+  "secondary": $secondary,
+  "info": $info,
+  "light": $light,
+  "silver": $silver,
+  "d-grey": $d-grey,
+  "grey": $grey,
+  "l-grey": $l-grey,
+  "grey-blue": $grey-blue,
+);
+
+//Spacing
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 8,
+  8: $spacer * 12,
+) !default;
+
+//Button
+$button-radius: 2.78px;
+$button-padding-y: 10px;
+$button-padding-x: 23px;
+
+$btn-border-radius: $button-radius;
+$btn-padding-x: $button-padding-x;
+$btn-padding-y: $button-padding-y;
+
+.btn {
+  width: auto;
+}
+.mr-3 {
+  margin-right: 3rem;
+}
+.mb-5 {
+  margin-bottom: 4rem;
+}
+
+.fs-5 {
+  font-size: 1.6rem;
+}
+//Nav
+$navbar-toggler-border-radius: 5px;
+$navbar-padding-y: 2.3rem;
+
+//Typography
+$headings-font-weight: 600;
+
+$h1-font-size: 6.4rem;
+$h1-line-height: 7.6rem;
+h1 {
+  font-size: $h1-font-size;
+  line-height: $h1-line-height;
+  font-weight: $headings-font-weight;
+}
+
+$h2-font-size: 3.6rem;
+$h2-line-height: 4.4rem;
+h2 {
+  font-size: $h2-font-size;
+  line-height: $h2-line-height;
+  font-weight: $headings-font-weight;
+}
+
+$h3-font-size: 2.8rem;
+$h3-line-height: 3.6rem;
+h3 {
+  font-size: $h3-font-size;
+  line-height: $h3-line-height;
+  font-weight: $headings-font-weight;
+}
+
+$h4-font-size: 2rem;
+$h4-line-height: 2.8rem;
+h4 {
+  font-size: $h4-font-size;
+  line-height: $h4-line-height;
+  font-weight: $headings-font-weight;
+}
+
+$p-font-size: 1.4rem; // 16px
+$p-line-height: 2rem; // 24px
+$p-font-weight: regular;
+$p-color: $grey; // Example color
+
+p {
+  font-size: $p-font-size;
+  line-height: $p-line-height;
+  font-weight: $p-font-weight;
+  color: $p-color;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
