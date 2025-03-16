@@ -16,7 +16,7 @@
 }
 
 h1, .h1 {
-  font-size: 6.4rem;
+  font-size: 5.5rem;
   line-height: 7.6rem;
   font-weight: 600;
 }
@@ -282,11 +282,11 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 h1, .h1 {
-  font-size: calc(1.765rem + 6.18vw);
+  font-size: calc(1.675rem + 5.1vw);
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 6.4rem;
+    font-size: 5.5rem;
   }
 }
 
@@ -9121,7 +9121,7 @@ textarea.form-control-lg {
 }
 
 .fs-1 {
-  font-size: calc(1.765rem + 6.18vw) !important;
+  font-size: calc(1.675rem + 5.1vw) !important;
 }
 
 .fs-2 {
@@ -13599,7 +13599,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 1200px) {
   .fs-1 {
-    font-size: 6.4rem !important;
+    font-size: 5.5rem !important;
   }
   .fs-2 {
     font-size: 3.6rem !important;
@@ -13647,6 +13647,10 @@ textarea.form-control-lg {
   }
 }
 :root {
+  overflow-x: hidden;
+}
+
+:root {
   font-size: 62.5%;
 }
 
@@ -13655,14 +13659,9 @@ textarea.form-control-lg {
     font-size: 50%;
   }
 }
-@media only screen and (max-width: 1000px) {
-  .nav-item {
-    margin-top: 1rem;
-  }
-  .nav-btn {
-    margin-top: 2rem;
-  }
-}
+/***************************/
+/******** Nav Section ******/
+/***************************/
 .nav-btn {
   width: auto;
 }
@@ -13677,6 +13676,17 @@ textarea.form-control-lg {
   margin-left: 1rem;
 }
 
+@media only screen and (max-width: 1000px) {
+  .nav-item {
+    margin-top: 1rem;
+  }
+  .nav-btn {
+    margin-top: 2rem;
+  }
+}
+/***************************/
+/******** Hero Section ******/
+/***************************/
 .hero {
   padding-top: 11rem;
   padding-bottom: 11rem;
@@ -13687,6 +13697,14 @@ textarea.form-control-lg {
   margin-top: 2rem;
 }
 
+@media only screen and (max-width: 767px) {
+  .hero {
+    text-align: center;
+  }
+  .hero-btn {
+    margin-bottom: 3rem;
+  }
+}
 .dots {
   position: absolute;
   bottom: 2rem;
@@ -13694,6 +13712,9 @@ textarea.form-control-lg {
   right: 50%;
 }
 
+/***************************/
+/*** Our Clients Section ***/
+/***************************/
 .our-clients h2, .our-clients .h2 {
   margin-top: 4rem;
   margin-bottom: 0.5rem;
@@ -13716,6 +13737,9 @@ textarea.form-control-lg {
   height: 6rem;
 }
 
+/***************************/
+/**** Community Section ****/
+/***************************/
 .community h2, .community .h2 {
   margin-top: 4rem;
 }
@@ -13738,16 +13762,34 @@ textarea.form-control-lg {
   border: none;
 }
 
-.card-1,
-.card-2 {
-  margin-right: 13rem;
+@media only screen and (max-width: 767px) {
+  .cards {
+    justify-content: center !important;
+    gap: 3rem;
+  }
 }
-
+/***************************/
+/**** Divider Section ******/
+/***************************/
 .divider {
   padding-top: 6.4rem;
   padding-bottom: 6.4rem;
 }
 
+@media only screen and (max-width: 767px) {
+  .divider {
+    text-align: center;
+    flex-direction: column;
+  }
+  .divider .row {
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+/***************************/
+/** Img and side content ***/
+/***************************/
 .img-content {
   padding-top: 4.8rem;
   padding-bottom: 4.8rem;
@@ -13761,9 +13803,44 @@ textarea.form-control-lg {
   margin-bottom: 3.2rem;
 }
 
+.big-text {
+  margin-top: 1rem;
+  margin-bottom: 3.6;
+}
+
+.big-text + h4, .big-text + .h4 {
+  margin-bottom: 8px;
+}
+
+.img-content .logos-inner {
+  gap: 4rem;
+  width: 5rem;
+  height: 5rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .img-content .row {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .img-content .col-5 {
+    width: auto;
+    margin-bottom: 3rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .logos-parent {
+    display: none !important;
+  }
+}
+/***************************/
+/****** Caring Section *****/
+/***************************/
 .caring {
+  flex-wrap: wrap;
   padding-top: 4.8rem;
-  margin-bottom: 9.4rem;
+  padding-bottom: 9.4rem;
 }
 
 .caring img {
@@ -13772,19 +13849,19 @@ textarea.form-control-lg {
   height: auto;
 }
 
-.caring .card-container {
-  position: relative;
-}
-
 .caring .box {
   border-radius: 8px;
   width: 100%;
   max-width: 31.7rem;
   height: auto;
-  padding: 1.6rem;
   position: absolute;
+  padding: 1.6rem;
   margin-top: -10rem;
   transform: translateX(2.5rem);
+}
+
+.caring .img-fluid {
+  width: 36.5rem;
 }
 
 .box-text {
@@ -13803,17 +13880,20 @@ textarea.form-control-lg {
   margin-bottom: 1.6rem;
 }
 
-.big-text {
-  margin-top: 1rem;
-  margin-bottom: 3.6;
-}
-
-.big-text + h4, .big-text + .h4 {
-  margin-bottom: 8px;
-}
-
-.img-content .logos-inner {
-  gap: 4rem;
-  width: 5rem;
-  height: 5rem;
+@media only screen and (max-width: 1200px) {
+  .caring .row {
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 14rem;
+  }
+  .caring .col-md-auto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .caring .box {
+    transform: translateX(0.5rem);
+    margin-top: 29rem;
+  }
 }
