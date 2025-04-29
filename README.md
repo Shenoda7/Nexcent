@@ -1,6 +1,4 @@
 # Nexcent
-- Note: it's not responsive due to psychological issues
-- Life update: We added responsive design 
 - [Check out the website](https://nexcent-shenoda.netlify.app)
 
 
